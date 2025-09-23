@@ -259,3 +259,18 @@ footer #disclaimer p{
     font-size: 1em;
     text-align: center;
 }
+#timeofday {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a3a3a;
+    background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-radius: 6px;
+}
+#timeofday #clock {
+    color: #125688;
+    font-weight: bold;
+    margin-left: 8px;
+}
