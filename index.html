@@ -38,7 +38,7 @@
 		</main>
 		<section>
 			<ul id="partners">
-				<li class="partner">
+				<!-- <li class="partner">
 					<img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
 				</li>
 				<li class="partner">
@@ -55,7 +55,7 @@
 				</li>
 				<li class="partner">
 					<img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
-				</li>
+				</li> -->
 			</ul>
 		</section>
 		<footer>
@@ -133,7 +133,24 @@
 			document.getElementById("clock").innerText = time;
 			setInterval(currentTime, 1000);
 		}
+		function updatePartenerImage(){
+			var partners = [];
+			var fileNames = [];
+			var imageList = [];
+			var image; 
+			var openList = "<li class='partner'>";
+			var closeList = "</li>";
+
+			for(var i=0; i<6; i++){
+				fileNames.push("partner-" + (i+1));
+				partners.push("<img src='images/partners/"+fileNames[i]+ ".png' >");
+				image = openList + partners[i] + closeList;
+				imageList.push(image);
+			}
+			document.getElementById("partners").innerHTML = imageList;
+		}
 		currentTime();
+		updatePartenerImage();
 	</script>
 </body>
 </html>
