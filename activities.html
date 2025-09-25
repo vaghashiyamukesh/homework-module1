@@ -112,24 +112,7 @@
 			</div>
 		</footer>
 	</div>
-		<script>
-		function updatePartenerImage(){
-			var fileNames = [];
-			var partners = [];
-			var imageList = [];
-			var openList = "<li class='partner'>";
-			var closeList = "</li>";
-			var image = "";
-
-			for(var i=0; i<6; i++){
-				fileNames.push("partner-" + (i+1));
-				partners.push("<img src='images/partners/"+fileNames[i]+ ".png' >");
-				image = openList + partners[i] + closeList;
-				imageList.push(image);
-			}
-			document.getElementById("partners").innerHTML = imageList;	
-		}
-		updatePartenerImage();
-	</script>
+	<!--site scripts-->
+	<script src="js/site_scripts.js"> </script>	
 </body>
 </html>

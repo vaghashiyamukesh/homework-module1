@@ -51,9 +51,22 @@
                         <option value="east">East Cliff</option>
                         <option value="south">South Cliff</option>
                     </select><br><br>
-                    <label for="referral">How did you hear about us:</label><br>
-                    <input type="text" id="referral" name="referral"><br><br>
-                    <button type="submit">inquirie</button>
+                    <!-- <label for="referral">How did you hear about us:</label><br>
+                    <input type="text" id="referral" name="referral"><br><br> -->
+						<div class="commentbox">
+							<label>How did you hear about us:</label><br>
+							<textarea></textarea>
+						</div>
+
+						<!--Random Codes-->
+						<div class="randomcode">
+							<input type="text" name="randomcode" placeholder="Enter characters">
+							<p id="codes"></p>
+						</div>
+
+						<div class="button">
+							<input type="submit" id="submit" value="Inquire">
+						</div> 
                 </fieldset>
         </main>
 		<section>
@@ -92,24 +105,9 @@
 			</div>
 		</footer>
 	</div>
-	<script>
-		function updatePartenerImage(){
-			var fileNames = [];
-			var partners = [];
-			var imageList = [];
-			var openList = "<li class='partner'>";
-			var closeList = "</li>";
-			var image = "";
+	<!--site scripts-->
+	<script src="js/site_scripts.js"> </script>
 
-			for(var i=0; i<6; i++){
-				fileNames.push("partner-" + (i+1));
-				partners.push("<img src='images/partners/"+fileNames[i]+ ".png' >");
-				image = openList + partners[i] + closeList;
-				imageList.push(image);
-			}
-			document.getElementById("partners").innerHTML = imageList;	
-		}
-		updatePartenerImage();
-	</script>
+	<script src="js/randomcodes.js"> </script>
 </body>
 </html>
