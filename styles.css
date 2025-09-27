@@ -91,13 +91,38 @@ table {
 
 table caption {
     font-weight: bold;
-    margin-bottom: 1em;
 }
 
-th, td {
+th {
     border: 1px solid #ccc;
     padding: 0.5em;
     text-align: left;
+    background-color: #B5DCEE;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    text-align: left;
+}
+
+/* First column (Activity) styles */
+table tbody td:first-child {
+    background-color: #B5DCEE;
+}
+
+caption {
+    background-color: #a52a2a;
+}
+/* Activity table styles */
+.selectable {
+    cursor: pointer;
+    background-color: #E8F5E2;  /* Light green background for selectable cells */
+}
+
+.selected {
+    background-color: #9ed034;
+    color: white;
 }
 
 /* Partners Section */
