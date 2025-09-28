@@ -87,42 +87,54 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 2em 0;
+    border: 1px solid #963;
 }
 
 table caption {
     font-weight: bold;
+    background-color: #963;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
 }
 
 th {
-    border: 1px solid #ccc;
-    padding: 0.5em;
-    text-align: left;
-    background-color: #B5DCEE;
+    border: 1px solid #963;
+    padding: 0.75em;
+    text-align: center;
+    background-color: #6698FF;
+    color: black;
 }
 
 td {
-    border: 1px solid #ccc;
-    padding: 0.5em;
-    text-align: left;
+    border: 1px solid #963;
+    padding: 0.75em;
+    text-align: center;
+    background-color: #E8F5E2;
 }
 
 /* First column (Activity) styles */
-table tbody td:first-child {
-    background-color: #B5DCEE;
+table tbody td:first-child, 
+table thead th:first-child {
+    background-color: #6698FF;
+    font-weight: bold;
 }
 
-caption {
-    background-color: #a52a2a;
-}
 /* Activity table styles */
 .selectable {
     cursor: pointer;
-    background-color: #E8F5E2;  /* Light green background for selectable cells */
+    background-color: #9ed034 !important;
+    color: white;
 }
 
-.selected {
-    background-color: #9ed034;
-    color: white;
+td:not(.selectable):hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+td[data-available="false"] {
+    background-color: #E8F5E2;
+    cursor: not-allowed;
 }
 
 /* Partners Section */
@@ -311,4 +323,31 @@ form .button input{
 }
 p {
     display: contents;
+}
+#activities main #displaySelected {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+}
+
+#activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
+    display: inline-block;
+    margin: 0;
+}
+
+#activities main #result {
+    min-height: 50px;
+    width: 300px;
+    padding: 0;
+}
+
+#activities main #result h4 {
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+
+#activities main #displaySelected #sendinfo input[type="email"] {
+    width: 200px;
 }
