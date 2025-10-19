@@ -234,23 +234,27 @@ footer #disclaimer p{
 }
 
 #home header {
-    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px;
+    background: no-repeat center center/cover lightgrey url(images/cliff_ocean.jpg);
+    background-size: cover;
+    background-position: center;
 }
 /* Activities and Contact Header Backgrounds */
 #activities header {
-    background: no-repeat lightgrey url(images/runfly.jpg);
-    background-size: 1500px;
+    background: no-repeat center center/cover lightgrey url(images/runfly.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #contact header {
-    background: no-repeat lightgrey url(images/cliff_rock.jpg);
-    background-size: 1500px;
+    background: no-repeat center center/cover lightgrey url(images/cliff_rock.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #cliffs header {
-    background: no-repeat lightgrey url(images/forest_cliff.jpg);
-    background-size: 1500px;
+    background: no-repeat center center/cover lightgrey url(images/forest_cliff.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .cliffs-gallery {
