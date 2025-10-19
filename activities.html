@@ -3,26 +3,31 @@
 <head>
 	<title>Great Cliff</title>
 	<meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body id="activities">
 	<div class="container">
-		<header>
-			<div class="main-header">
-				<div class="logo">
-					<img src="images/logo.png" alt="osean cliffs logo" width="125">
-				</div>
-				<nav class="main-menu">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="cliffs.html">Cliffs</a></li>
-						<li class="active"><a href="activities.html">Activities</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo.png" alt="osean cliffs logo" width="50">
+				Great Cliff
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
+					<li class="nav-item active"><a class="nav-link" href="activities.html">Activities</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+				</ul>
 			</div>
-		</header>
+		</nav>
+	</header>
 		<main>
 			<h1>Activities</h2>
             <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
@@ -86,26 +91,28 @@
 		</div>
         </main>
 		<section>
-			<ul id="partners">
-				<!-- <li class="partner">
-					<img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
-				</li>
-				<li class="partner">
-					<img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
-				</li>
-				<li class="partner">
-					<img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
-				</li>
-				<li class="partner">
-					<img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
-				</li>
-				<li class="partner">
-					<img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
-				</li>
-				<li class="partner">
-					<img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
-				</li> -->
-			</ul>
+			<div class="container my-4">
+				<div class="row" id="partners">
+					<div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center">
+						<img src="images/partners/partner-1.png" alt="Partner 1" class="img-fluid rounded-circle shadow">
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center">
+						<img src="images/partners/partner-2.png" alt="Partner 2" class="img-fluid rounded-circle shadow">
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center">
+						<img src="images/partners/partner-3.png" alt="Partner 3" class="img-fluid rounded-circle shadow">
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center">
+						<img src="images/partners/partner-4.png" alt="Partner 4" class="img-fluid rounded-circle shadow">
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center">
+						<img src="images/partners/partner-5.png" alt="Partner 5" class="img-fluid rounded-circle shadow">
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center">
+						<img src="images/partners/partner-6.png" alt="Partner 6" class="img-fluid rounded-circle shadow">
+					</div>
+				</div>
+			</div>
 		</section>
 		<footer>
 			<div id="nondisclaimer">
@@ -114,7 +121,10 @@
 					<a href="#" class="fa fa-facebook"></a>
 					<a href="#" class="fa fa-instagram"></a>
 					<a href="#" class="fa fa-twitter"></a>
-				</div>
+					</div>
+					<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 			</div>
 			<div id="disclaimer">
 				<p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
